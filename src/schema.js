@@ -14,6 +14,10 @@ const typeDefs = gql`
     "Increment the number of views of a given track, when the track card is clicked"
     incrementTrackViews(id: ID!): IncrementTrackViewsResponse!
   }
+  
+  type Test {
+    id: ID!
+  }
 
   type IncrementTrackViewsResponse {
     "Similar to HTTP status code, represents the status of the mutation"
